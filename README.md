@@ -32,6 +32,21 @@ The Apps Script project cannot use the GCP project to which it is associated by 
 
  Use Apps Script's `PropertiesService` to store confidential information. Primarily for example, the ID for the Spreadsheet used in this script is stored as `scriptProperties` and not in the code. Use the setter functions in Properties.js to add and update secrets, e.g.,  credentials and tokens for accessing external APIs.
 
+## CONFIG FILES
+Use these configuration files to connect Apps Script to GCP.
+
+### `.clasp.json`
+Include the GCP Project Id
+
+### `.clasprc.json`
+Ignore this file that is created/deleted when you login/logout locally with `clasp login`
+
+### `creds.json`
+Delete or gitignore this credentials file downloaded from GCP which is used to login globally with `clasp login --creds creds.json`. Do Not commit this file.
+
+### `appsscript.json`
+Include access, scopes, and the runtimeVersion
+
  ## HELPFUL INFORMATION
  Included in this link is helpful information about adding scopes to the manifest.
  https://github.com/google/clasp/issues/506
