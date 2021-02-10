@@ -32,7 +32,7 @@ The Apps Script project cannot use the GCP project to which it is associated by 
 
  Use Apps Script's `PropertiesService` to store confidential information. Primarily for example, the ID for the Spreadsheet used in this script is stored as `scriptProperties` and not in the code. Use the setter functions in Properties.js to add and update secrets, e.g.,  credentials and tokens for accessing external APIs.
 
- ## HELPFUL INFO
+ ## HELPFUL INFORMATION
  Included in this link is helpful information about adding scopes to the manifest.
  https://github.com/google/clasp/issues/506
 
