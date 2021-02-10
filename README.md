@@ -26,6 +26,13 @@ The Apps Script project cannot use the GCP project to which it is associated by 
  ## THE PROCESS
  Here are the setup steps from the `claps` GitHub repo.
  https://github.com/google/clasp/blob/master/docs/run.md#setup-instructions
+ ## LOGIN TWICE
+ If you `clasp logout`, you will need to login twice, both globally and locally.
+ ### CLASP GLOBAL LOGIN
+ `clasp login` - Authenticate globally in the browser
+ ### CLASP LOCAL LOGIN
+ `clasp login --creds creds.json` - Authenticate locally with the `.json` credentials file downloaded from  GCP, and then login in the browser.
+
 
  ## KEEPING SECRETS
  Setting up the Apps Script API requires a *global* login step. The credential `.json` file downloaded from GCP is used, `clasp login --cred cred.json`. **Do not check this file into source control**. Instead, delete the file which can be downloaded again when needed.
