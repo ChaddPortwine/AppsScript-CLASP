@@ -12,11 +12,11 @@ Apps Script files are locally stored, and easy to add to source control, obvious
 
 ## WORKFLOW
 * Git pull
-* Save changes
+* File save
 * Clasp push
 * Clasp run
 * Clasp deploy
-* Git Push
+* Git commit/push
 
 ## REQUIREMENT
 These tools work when the Apps Script project is associated with a new GCP project. The GCP project must enable APIs which `clasp` requires. The GCP project also provides credentials to authenticate the `clasp` requests coming from the CLI.
