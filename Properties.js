@@ -11,7 +11,7 @@ function setProperty(key,value) {
 };
 function logProperties() {
     let scriptProperties = PropertiesService.getScriptProperties()
-    return scriptProperties.getProperty(setNewKey)
+    return scriptProperties
 };
 function getProperty(key){
     let scriptProperties = PropertiesService.getScriptProperties()
