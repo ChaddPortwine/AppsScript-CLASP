@@ -3,7 +3,7 @@
  * from the Apps Script PropertiesService
  */
 
-// RUN: clasp run setProperty -p ['key','value']
+// RUN: clasp run setProperty -p '["key","value"]'
 function setProperty(key,value) {
     let scriptProperties = PropertiesService.getScriptProperties()
     scriptProperties.setProperty(key,value)
