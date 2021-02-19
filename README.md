@@ -57,7 +57,18 @@ Delete or gitignore this credentials file downloaded from GCP which is used to l
 ### `appsscript.json`
 Include access, scopes, and the runtimeVersion
 
- ## HELPFUL INFORMATION
+ ## SERVICES VS SCOPES
+ ### SERVICES
+ See the list of available services and enable or disable them.
+
+ ```
+ clasp apis list
+ clasp apis enable <api>
+ clasp apis disable <api>
+```
+
+ ### SCOPES
+ When Apps Scripts use GCP to authorize services like requesting user information, 
  Included in this link is helpful information about adding scopes to the manifest.
  https://github.com/google/clasp/issues/506
 
